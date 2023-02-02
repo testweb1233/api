@@ -8,7 +8,7 @@ const hwid = [
 ]
 
 app.get('/', (req, res) => {
-    res.send({ message: 'Ok'})
+    res.send({ message: 'API ON'})
 })
 
 app.get('/check', async (req, res) => {
