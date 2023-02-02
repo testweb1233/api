@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const port = process.env.PORT || 5000
 
 const hwid = [
     '58E3A4DC-2D51-7E49-AB5A-7FCF951A7521',
@@ -21,4 +22,6 @@ app.get('/check', async (req, res) => {
     }
 })
 
-app.listen(80)
+app.listen(port, () => {
+    console.log('PORT : ' + port)
+})
